@@ -1,3 +1,4 @@
+<pre>
 Product List Page
 The list will have Product Name, Image, Price, Short Description
 The product can be Add to the Cart
@@ -12,3 +13,4 @@ Address
 Once Click Place Order Button order should be placed. Order details need to be stored in DB
 
 ![Alt text](uploads/iphone5s.png?raw=true "Optional Title")
+</pre>
