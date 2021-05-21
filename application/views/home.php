@@ -25,7 +25,7 @@ body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
           <button id="s-<?php echo  $products['product_id'];?>" class="activeclass w3-button w3-black" ><i class="fa fa-shopping-cart"></i> </a>
           </div>
         </div>
-        <p><?php echo $products["product_name"]; ?><br><b class="w3-text-red"><?php echo $products["price"]; ?></b></p>
+        <p><?php echo $products["product_name"]; ?><br><b class="w3-text-red"><?php echo $products["price"]; ?></b><br><?php echo $products["short_description"]; ?></p>
       </div>
     <?php }?>
 </body>
