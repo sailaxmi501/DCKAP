@@ -11,6 +11,16 @@ Email
 Phone Number
 Address
 Once Click Place Order Button order should be placed. Order details need to be stored in DB
-
-![Alt text](uploads/iphone5s.png?raw=true "Optional Title")
 </pre>
+
+Product List page:
+![Alt text](uploads/product_list.png?raw=true "Optional Title")
+
+Cart page:
+![Alt text](uploads/cart.png?raw=true "Optional Title")
+
+Customer Details page:
+![Alt text](uploads/checkout.png?raw=true "Optional Title")
+
+Order Success page:
+![Alt text](uploads/success.png?raw=true "Optional Title")

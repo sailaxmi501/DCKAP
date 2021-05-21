@@ -17,15 +17,17 @@ body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
   </header>
 <body>
 <?php foreach($product_list as $products){?>
- <div class="w3-container" style="float:left">
+ <div class="w3-container" style="float:left;width:25%">
         <div class="w3-display-container" >
-          <img src="<?php echo base_url();?>/uploads/<?php echo $products["product_image"];?>" style="width:100%;height:100px">
+          <img src="<?php echo base_url();?>/uploads/<?php echo $products["product_image"];?>" style="width:100%;height:250px">
           <span class="w3-tag w3-display-topleft"><?php echo $products["product_status"]; ?></span>
+        <?php if($products["product_status"]=="Active"){?>
           <div class="w3-display-middle w3-display-hover">
           <button id="s-<?php echo  $products['product_id'];?>" class="activeclass w3-button w3-black" ><i class="fa fa-shopping-cart"></i> </a>
           </div>
+        <?php }?>
         </div>
-        <p><?php echo $products["product_name"]; ?><br><b class="w3-text-red"><?php echo $products["price"]; ?></b><br><?php echo $products["short_description"]; ?></p>
+        <p><?php echo $products["product_name"]; ?><br><b class="w3-text-red"><span>&#8377;</span><?php echo $products["price"]; ?></b><br><?php echo $products["short_description"]; ?></p>
       </div>
     <?php }?>
 </body>

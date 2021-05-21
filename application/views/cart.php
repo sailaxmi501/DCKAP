@@ -31,7 +31,7 @@
                 <tr>
                   <td><?php echo $row['product_id']?></td>
                   <td><?php echo $row['product_name']?></td>
-                  <td><?php echo $row['price']*$row['qty']?></td>
+                  <td><span>&#8377;</span><?php echo $row['price']*$row['qty']?></td>
                   <td><?php echo $row['qty']?></td>
                   <td>  
                   <a onclick = "return confirm('are you sure want to delete this item?');" href="<?php echo site_url('cart/cartDelete/'.base64_encode($row['cart_id']));?>"><button class="btn btn-xs btn-danger"><i class="fa fa-exclamation-circle"></i> Delete</button></a></td>
@@ -43,7 +43,7 @@
                 </tbody>
                
                 </table>
-                <h2>Grand Total:<?php echo $grand_total;?></h2>   
+                <h2>Grand Total:<span>&#8377;</span><?php echo $grand_total;?></h2>   
                 <button><a href="<?php echo base_url();?>">Back To Home</a></button> 
                 <a href="<?php echo base_url();?>checkout"><input type="button" class="btn btn-success" style="float: right;" value="Checkout"></a>
 
